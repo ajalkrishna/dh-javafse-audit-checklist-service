@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-west-2:860061945305:task-definition/audit-checklist-task:1"
+        TaskDefinition: "arn:aws:ecs:us-west-2:860061945305:task-definition/audit-checklist-task-1:1"
         LoadBalancerInfo:
-          ContainerName: "audit-checklist-service"
+          ContainerName: "dh-javafse-audit-checklist-service"
           ContainerPort: "8200"
         PlatformVersion: "LATEST"
